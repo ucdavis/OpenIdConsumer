@@ -9,7 +9,7 @@
 @if (ViewData["Message"] != null) {
 	<div style="border: solid 1px red">@ViewData["Message"]</div>
 }
-	<p>You must log in before entering the Members Area: </p>
+	<p>You must log in before entering the Members Area. Select an openID provider (test.caes is the default) and then click "Login":</p>
 
 @using (Html.BeginForm("Authenticate", "Account", new { ReturnURL = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]) }, FormMethod.Post)) { 
 	<label for="openid_identifier">OpenID: </label>

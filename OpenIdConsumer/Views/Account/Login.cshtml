@@ -16,3 +16,18 @@
 	<input autofocus="true" id="openid_identifier" name="openid_identifier" value="https://test.caes.ucdavis.edu/openid/" size="40" />
 	<input type="submit" value="Login" />
 }
+
+<h3>Some examples of valid openID providers</h3>
+<ul>
+    <li><a class="provider" href="https://test.caes.ucdavis.edu/openid/">https://test.caes.ucdavis.edu/openid/</a></li>
+    <li><a class="provider" href="https://www.google.com/accounts/o8/id">https://www.google.com/accounts/o8/id</a></li>
+</ul>
+
+<script>
+    $(function () {
+        $(".provider").click(function (e) {
+            e.preventDefault();
+            $("#openid_identifier").val(this.href);
+        });
+    })
+</script>

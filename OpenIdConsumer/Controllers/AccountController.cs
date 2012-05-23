@@ -69,7 +69,7 @@ namespace OpenIdConsumer.Controllers
                         FormsAuthentication.SetAuthCookie(response.ClaimedIdentifier, false);
                         if (!string.IsNullOrEmpty(returnUrl))
                         {
-                            return Redirect(returnUrl);
+                            return Redirect(System.Web.HttpUtility.UrlDecode(returnUrl));
                         }
                         else
                         {

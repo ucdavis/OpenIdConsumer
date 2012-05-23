@@ -15,6 +15,12 @@ namespace OpenIdConsumer.Controllers
             return View();
         }
 
+        [Authorize]
+        public ActionResult MembersOnly()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             return View();

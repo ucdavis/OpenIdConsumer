@@ -1,0 +1,1 @@
+Example <a href="http://openid.net/">OpenID</a> consumer/relaying party, which shows how to setup your site to authenticate using an OpenID provider.
